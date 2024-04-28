@@ -9,6 +9,7 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
@@ -57,7 +58,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #fc7c1f;
+  background: #441ffc;
   color: #fff;
 }
 
@@ -83,7 +84,7 @@ h6 {
   transition: all 0.5s;
   z-index: 997;
   transition: all 0.5s;
-  background: rgba(42, 44, 57, 0.9);
+  background: rgba(137, 139, 152, 0.9);
 }
 
 #header.header-transparent {
@@ -91,7 +92,7 @@ h6 {
 }
 
 #header.header-scrolled {
-  background: rgba(42, 44, 57, 0.9);
+  background: rgba(127, 130, 147, 0.9);
 }
 
 #header .logo h1 {
@@ -176,7 +177,7 @@ h6 {
   opacity: 0;
   visibility: hidden;
   background: #fff;
-  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  box-shadow: 0px 0px 30px rgba(32, 37, 49, 0.25);
   transition: 0.3s;
   border-radius: 15px;
 }
@@ -343,9 +344,16 @@ h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
+ 
   overflow: hidden;
   position: relative;
   background: linear-gradient(0deg, rgb(42, 44, 57) 0%, rgb(51, 54, 74) 100%);
+  
+  background-image:url("../img/taj1.jpg") ;
+
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-size: 100% 100%;
   padding: 0;
 }
 
@@ -357,7 +365,9 @@ h6 {
   text-align: center;
   position: relative;
   height: 70vh;
+
   padding-top: 60px;
+  
 }
 
 #hero h2 {
@@ -411,6 +421,14 @@ h6 {
 }
 
 @media (min-width: 1024px) {
+  #hero{
+    background-image:url("../img/taj1.jpg") ;
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+     padding: 0;
+  } 
   #hero p {
     width: 60%;
   }
@@ -420,7 +438,16 @@ h6 {
     width: 5%;
   }
 }
+@media (max-width: 375px) {
+  #hero{
+    background-image:url("../img/pic2.jpg") ;
 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+     padding: 0;
+  }
+}
 @media (max-width: 768px) {
   #hero .carousel-container {
     height: 90vh;
@@ -727,8 +754,25 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+#services .btn-learn-more {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 7px 5px;
+  border-radius: 5px;
+  transition: 0.3s;
+  line-height: 1;
+  color: black;
+  animation-delay: 0.8s;
+  margin-top: 20px;
+  border: 2px solid black;
+}
 .services .icon-box {
-  padding: 30px;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-bottom: 20px;
   position: relative;
   overflow: hidden;
   border-radius: 10px;
@@ -1275,7 +1319,7 @@ section {
   border-radius: 50px;
   width: 36px;
   height: 36px;
-  background: rgba(239, 102, 3, 0.8);
+  background: rgba(105, 106, 108, 0.8);
   transition: ease-in-out 0.3s;
   color: #fff;
   display: inline-flex;
