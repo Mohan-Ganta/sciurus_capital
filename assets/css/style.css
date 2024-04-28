@@ -423,7 +423,6 @@ h6 {
 @media (min-width: 1024px) {
   #hero{
     background-image:url("../img/taj1.jpg") ;
-
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
